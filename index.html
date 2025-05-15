@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop UI/UX: Transformando a Qualidade do Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar clean -->
+    <nav class="navbar">
+        <div class="container navbar__container">
+            <a href="#" class="navbar__logo">
+                <i class="fas fa-pen-fancy"></i> UI/UX Workshop
+            </a>
+            
+            <button class="navbar__toggle" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="navbar__links" id="navbar-links">
+                <li><a href="#intro" class="navbar__link">Introdução</a></li>
+                <li><a href="#impacto" class="navbar__link">Impacto</a></li>
+                <li><a href="#comparacao" class="navbar__link">Comparação</a></li>
+                <li><a href="#checklist" class="navbar__link">Checklist</a></li>
+                <li><a href="#quiz" class="navbar__link">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section clean -->
+    <header class="hero" id="intro">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="section__subtitle2">WORKSHOP GRATUITO</span>
+                <h1>Desenhando o Futuro: UI/UX para Software de Qualidade</h1>
+                <h2>Transforme seus produtos digitais com design intuitivo</h2>
+                <p>Aprenda com especialistas como criar interfaces que reduzem bugs, aumentam a satisfação dos usuários e otimizam o desenvolvimento.</p>
+            </div>
+            
+            <div class="hero__image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Workshop UI/UX">
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Impacto clean -->
+    <section class="section" id="impacto">
+        <div class="container">
+            <span class="section__subtitle">IMPACTO NA QUALIDADE</span>
+            <h2 class="section__title">Como um Bom UI/UX Transforma seu Software</h2>
+            
+            <div class="grid grid--3cols">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="card__title">Redução de Bugs Reportados</h3>
+                    <p class="card__text">Interfaces claras evitam erros de uso, diminuindo a quantidade de bugs reportados em até 40%.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <h3 class="card__title">Satisfação dos Usuários</h3>
+                    <p class="card__text">Um design intuitivo aumenta a satisfação em 75%, gerando avaliações positivas e fidelidade.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="card__title">Retenção e Usabilidade</h3>
+                    <p class="card__text">Produtos fáceis de usar têm 3x mais retenção, com usuários voltando frequentemente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                
+    <!-- Seção de comparação clean -->
+    <section class="section" id="comparacao">
+        <div class="container">
+            <span class="section__subtitle">ANTES E DEPOIS</span>
+            <h2 class="section__title">Comparação: Certo vs. Errado</h2>
+            
+            <div class="comparison">
+                <div class="comparison__item bad-design">
+                    <h4 class="comparison__title">
+                        <i class="fas fa-times-circle"></i> Errado: Cores Sem Contraste
+                    </h4>
+                    <p>Texto claro sobre fundo claro dificulta a leitura e causa frustração.</p>
+                    
+                    <div class="comparison__image">
+                      <img src="ex1.png" alt="" srcset="">
+                    </div>
+                </div>
+                
+                <div class="comparison__item good-design">
+                    <h4 class="comparison__title">
+                        <i class="fas fa-check-circle"></i> Certo: Contraste Adequado
+                    </h4>
+                    <p>Texto escuro sobre fundo claro melhora a legibilidade e a experiência.</p>
+                    
+                   <div class="comparison__image">
+                      <img src="ex2.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comparison" style="margin-top: 2rem;">
+                <div class="comparison__item bad-design">
+                    <h4 class="comparison__title">
+                        <i class="fas fa-times-circle"></i> Errado: Botões Confusos
+                    </h4>
+                    <p>Botões pequenos e sem destaque dificultam a interação, aumentando erros.</p>
+                    
+                    <div class="comparison__image">
+                      <img src="ex3.png" alt="" srcset="">
+                    </div>
+                </div>
+                
+                <div class="comparison__item good-design">
+                    <h4 class="comparison__title">
+                        <i class="fas fa-check-circle"></i> Certo: Botões Claros
+                    </h4>
+                    <p>Botões grandes, com cores vivas e texto claro, facilitam a interação.</p>
+                    
+                     <div class="comparison__image">
+                      <img src="ex4.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de checklist clean -->
+    <section class="section bg-light" id="checklist">
+        <div class="container">
+            <span class="section__subtitle">BOAS PRÁTICAS</span>
+            <h2 class="section__title">Checklist de UI/UX para Qualidade</h2>
+            
+            <div class="checklist">
+                <div class="checklist__item">
+                    <i class="fas fa-check checklist__icon"></i>
+                    <div>
+                        <h4 class="checklist__title">Consistência Visual</h4>
+                        <p>Mantenha padrões em cores, tipografia e espaçamento para uma experiência coesa.</p>
+                    </div>
+                </div>
+                
+                <div class="checklist__item">
+                    <i class="fas fa-check checklist__icon"></i>
+                    <div>
+                        <h4 class="checklist__title">Hierarquia Clara</h4>
+                        <p>Organize elementos para guiar o usuário pelas informações principais.</p>
+                    </div>
+                </div>
+                
+                <div class="checklist__item">
+                    <i class="fas fa-check checklist__icon"></i>
+                    <div>
+                        <h4 class="checklist__title">Feedback Imediato</h4>
+                        <p>Mostre confirmações visuais para ações, como botões que mudam ao clicar.</p>
+                    </div>
+                </div>
+                
+                <div class="checklist__item">
+                    <i class="fas fa-check checklist__icon"></i>
+                    <div>
+                        <h4 class="checklist__title">Simplifique Decisões</h4>
+                        <p>Reduza opções desnecessárias e guie o usuário pelo fluxo mais comum.</p>
+                    </div>
+                </div>
+                
+                <div class="checklist__item">
+                    <i class="fas fa-check checklist__icon"></i>
+                    <div>
+                        <h4 class="checklist__title">Acessibilidade</h4>
+                        <p>Garanta que o design seja utilizável por pessoas com diferentes habilidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de quiz melhorada -->
+    <section class="section" id="quiz">
+        <div class="container">
+            <span class="section__subtitle">TESTE SEU CONHECIMENTO</span>
+            <h2 class="section__title">Quiz: UI/UX Design</h2>
+            
+            <div class="quiz">
+                <div class="quiz__intro" id="quiz-intro">
+                    <p>Responda 5 perguntas sobre UI/UX Design e veja seu resultado ao final com explicações detalhadas!</p>
+                    <button class="btn btn--primary" id="start-quiz">
+                        <i class="fas fa-play"></i> Começar Quiz
+                    </button>
+                </div>
+                
+                <div class="quiz__questions" id="quiz-questions" style="display: none;">
+                    <div class="quiz__question" id="question-container">
+                        <!-- Perguntas serão inseridas aqui pelo JavaScript -->
+                    </div>
+                    
+                    <div class="quiz__progress" id="quiz-progress">
+                        Pergunta <span id="current-question">1</span> de <span id="total-questions">5</span>
+                    </div>
+                    
+                    <button class="btn btn--primary" id="next-question" disabled>Próxima Pergunta</button>
+                </div>
+                
+                <div class="quiz__results" id="quiz-results" style="display: none;">
+                    <h3 class="quiz__results-title">Seu Resultado</h3>
+                    
+                    <div class="quiz__score">
+                        Você acertou <span id="correct-answers">0</span> de <span id="total-questions-result">5</span> perguntas!
+                    </div>
+                    
+                    <div id="quiz-results-details">
+                        <!-- Resultados detalhados serão inseridos aqui -->
+                    </div>
+                    
+                    <button class="btn btn--outline" id="restart-quiz">
+                        <i class="fas fa-redo"></i> Fazer Novamente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer clean -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <i class="fas fa-pen-fancy"></i> UI/UX Workshop
+                </div>
+                <p class="footer__about">Transformando a qualidade de software através de design centrado no usuário.</p>
+                
+           
+            </div>
+            
+    <script src="main.js"></script>
+</body>
+</html>
